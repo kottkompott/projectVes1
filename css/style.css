@@ -26,7 +26,7 @@ body {
     font-weight: 400;
     color: #333333;
 }
-.header{
+.header {
     color: #ffffff;
     background: #445162;   
     font-weight: 400;
@@ -35,24 +35,24 @@ body {
     display: flex;
     justify-content: space-between;
 }
-.header-title{
+.header-title {
     font-size: 60px;
     line-height: 1.2;
     font-weight: 400;
     margin: 10px 0 35px;
 }
-.header-list{
+.header-list {
     list-style: none;
     /*list-style-image: url(../img/check_icon_349.png);*/
     margin: 0;
     padding: 0 0 0 35px;
 }
-.header-item{    
+.header-item {    
     font-size: 20px;
     line-height: 36px;
     position: relative;    
 }
-.header-item::before{
+.header-item::before {
     width: 25px;
     height: 19px;
     position: absolute;    
@@ -62,51 +62,51 @@ body {
     background: url(../img/check_icon_349.png);
     background-size: 25px 19px;
 }
-.header-img{
+.header-img {
     margin-top: 10px;
 }
-.title{
+.title {
     font-size: 30px;
     line-height: 36px;
     font-weight: 400;
     color: #445161;
 }
-.about{
+.about {
     padding: 50px 0 0 0;
     margin: 0 50px 50px;
     background: #fff;
     display: flex;
     justify-content: space-between;
 }
-.about-title{
+.about-title {
     margin: 0 0 14px 0;
 }
-.about-content{
+.about-content {
     max-width: 650px;
 }
-.about-text{
+.about-text {
     padding: 10px 10px 5px 0;
 }
-.dignity{
+.dignity {
     background:#f5f5f5;
     padding: 50px 50px 20px;  
 }
-.dignity-title{
+.dignity-title {
     text-align: center;
     margin: 0 0 24px 0;
 }
-.dignity-list{
+.dignity-list {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;  
 }
-.dignity-item{
+.dignity-item {
     margin: 0 0 40px 0;
     width: 47%;
     position: relative;
 }
-.dignity-item::before{
+.dignity-item::before {
     width: 34px;
     height: 35px;
     position: absolute;
@@ -117,15 +117,15 @@ body {
     background-size: 34px 35px;
 
 }
-.screenshots{
+.screenshots {
     padding: 50px 50px 20px;
     background: #fff;
 }
-.screenshots-title{
+.screenshots-title {
     text-align: center;
     margin: 0 0 14px 0;
 }
-.screenshots-list{
+.screenshots-list {
     width: 100%;
     padding: 20px 0 0 0;
     list-style-type: none;
@@ -133,43 +133,43 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;  
 }
-.screenshots-item{
+.screenshots-item {
     width: 48%;
     display: flex;
     justify-content: space-between;   
     margin: 0 0 25px; 
 }
-.scr-tit{    
+.scr-tit {    
     font-size: 24px;
     line-height: 30px;
     font-weight: 400;
     color: #445161;
 }
-.scr-ins{
+.scr-ins {
     margin: 0 0 0 10px;
 }
-.reviews{
+.reviews {
     background: #f5f5f5;
     padding: 50px 50px 35px;  
 }
-.reviews-title{
+.reviews-title {
     text-align: center;
     margin: 0 0 14px 0;
 }
-.reviews-wrap{
+.reviews-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.reviews-content{
+.reviews-content {
     width: 49%;
     display: flex;
     justify-content: space-around;
 }
-.reviews-userpick{
+.reviews-userpick {
     margin: 20px 0 0 0;
 }
-.reviews-review{    
+.reviews-review {    
     background: #ebebeb;
     max-width: 450px;
     border-radius: 5px;    
@@ -178,7 +178,7 @@ body {
     position: relative;
     z-index: 10;
 }
-.reviews-review::after{
+.reviews-review::after {
     content: '';
     width: 0;
     height: 0;
@@ -193,41 +193,41 @@ body {
     border-right: 15px solid #ebebeb;
     left: -15px;
 }
-.review-text{
+.review-text {
     padding: 5px;
     font-size: 14px;
     line-height: 18px;
     font-style: italic;
     color: #333333;
 }
-.review-sing{
+.review-sing {
     padding: 5px;
     font-size: 14px;
     line-height: 18px;
     color: #989898;
 }
-.buy{
+.buy {
     padding: 50px 50px 20px;
     background: #fff;
     
 }
-.buy-title{
+.buy-title {
     text-align: center;
     margin: 0 0 14px 0;
 }
-.buy-conditions{
+.buy-conditions {
     display: flex;
     justify-content: space-around;
     padding: 40px 50px;
     align-items: flex-end;
 }
-.buy-condition{
+.buy-condition {
     background: #445162;    
     border-radius: 5px;
     width: 30%;
     max-width: 300px;
 }
-.buy-condition-title{
+.buy-condition-title {
     font-size: 24px;
     line-height: 30px;
     font-weight: 400;
@@ -235,7 +235,7 @@ body {
     text-align: center;
     padding: 15px 0;
 }
-.buy-condition-price{
+.buy-condition-price {
     border:1px solid #445162;
     background: #fff;
     width: 99%;
@@ -246,7 +246,7 @@ body {
     text-align: center;
     padding: 15px 0;
 }
-.buy-condition-item{
+.buy-condition-item {
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
@@ -258,6 +258,7 @@ body {
     height: 40px;
     background-color: #ffffff;
     border-radius: 7px;
+    text-transform: uppercase;
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
@@ -300,6 +301,7 @@ body {
     height: 40px;
     background-color: #ffffff;
     border-radius: 7px;
+    text-transform: uppercase;
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
@@ -319,8 +321,16 @@ body {
     margin: 0 0 20px;
   }
   
-  .footer-input-mess {
-    padding-bottom: 130px;
+  .footer-mess {
+    width: 500px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #445162;
+    padding: 10px 10px 130px;
+    border-radius: 7px;
+    margin: 0 0 20px;
+    resize: none;
   }
   
   .footer-list {
@@ -336,7 +346,7 @@ body {
     color: #ffffff;
     margin: 5px 0 25px;
   }
-  .footer-skype{
+  .footer-skype {
     position: relative;
   }
   .footer-skype::before {
@@ -350,7 +360,7 @@ body {
     background: url(../img/skype_icon.png) no-repeat;
   }
   
-  .footer-icq{
+  .footer-icq {
     position: relative;
   }
   .footer-icq::before {
@@ -363,7 +373,7 @@ body {
     background-size: 26px 26px;
     background: url(../img/icq_icon.png) no-repeat;
   }
-  .footer-email{
+  .footer-email {
     position: relative;
   }
   .footer-email::before {
@@ -376,7 +386,7 @@ body {
     background-size: 26px 26px;
     background: url(../img/email_icon.png) no-repeat;
   }
-  .footer-phone{
+  .footer-phone {
     position: relative;
   }
   .footer-phone::before {
@@ -389,7 +399,7 @@ body {
     background-size: 26px 26px;
     background: url(../img/phone_icon.png) no-repeat;
   }
-  .footer-socbut {
+.footer-socbut {
     font-family: Socialico;
     font-size: 60px;
     line-height: 24px;
@@ -398,13 +408,17 @@ body {
     margin: 15px 0;
     color: #ffffff;
     margin:45px 0;
-  }
-  .footer-copyr{
+}
+.footer-copyr {
     font-size: 12px;        
     letter-spacing: 0.025em;
-    color: $color-base;
+    color: #445162;
     background:#f5f5f5;
     text-align: center;
     padding: 5px 0 ;
     margin: 0;
-  }
+}
+textarea::placeholder, input::placeholder {
+    color:#445162; 
+    font-family: ArialMT, Arial, sans-serif;
+}
