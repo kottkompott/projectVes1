@@ -8,7 +8,7 @@
   src: url("../fonts/socialico.ttf") format("truetype");
 }
 
-html, body, h1, h2, h3, img, p {
+html, body, h1, h2, h3, img, p, a {
   margin: 0;
   padding: 0;
 }
@@ -325,12 +325,31 @@ body {
   font-size: 18px;
   height: 40px;
   background-color: #ffffff;
+  text-transform: uppercase;
   border-radius: 7px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   color: #445161;
   margin: 5px 20px 20px;
+}
+
+.buy-condition-button:hover, .buy-condition-button:focus {
+  -webkit-box-shadow: inset 0 0 7px #445162;
+          box-shadow: inset 0 0 7px #445162;
+  opacity: 0.97;
+  font-weight: 1200;
+  color: #ffffff;
+  text-shadow: #445162 1px 1px 2px;
+}
+
+.buy-condition-button:active {
+  -webkit-box-shadow: inset 0 0 6px #44515f;
+          box-shadow: inset 0 0 6px #44515f;
+  opacity: 0;
+  font-weight: 1200;
+  color: #f5f5f5;
+  text-shadow: #445162 1px 1px 2px #ffffff 2px 2px 3px;
 }
 
 .footer {
@@ -367,6 +386,7 @@ body {
 .footer-button {
   height: 40px;
   background-color: #ffffff;
+  text-transform: uppercase;
   border-radius: 7px;
   font-size: 18px;
   line-height: 18px;
@@ -374,6 +394,24 @@ body {
   color: #445161;
   width: 140px;
   margin: 5px 180px;
+}
+
+.footer-button:hover, .footer-button:focus {
+  -webkit-box-shadow: inset 0 0 7px #445162;
+          box-shadow: inset 0 0 7px #445162;
+  opacity: 0.97;
+  font-weight: 1200;
+  color: #ffffff;
+  text-shadow: #445162 1px 1px 2px;
+}
+
+.footer-button:active {
+  -webkit-box-shadow: inset 0 0 6px #44515f;
+          box-shadow: inset 0 0 6px #44515f;
+  opacity: 0;
+  font-weight: 1200;
+  color: #f5f5f5;
+  text-shadow: #445162 1px 1px 2px #ffffff 2px 2px 3px;
 }
 
 .footer-input {
@@ -387,8 +425,29 @@ body {
   margin: 0 0 20px;
 }
 
-.footer-input-mess {
-  padding-bottom: 130px;
+.footer-input:hover {
+  -webkit-box-shadow: inset 0 0 7px #445162;
+          box-shadow: inset 0 0 7px #445162;
+  opacity: 0.95;
+}
+
+.footer-mess {
+  width: 500px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #445162;
+  padding: 10px 10px 130px;
+  border-radius: 7px;
+  margin: 0 0 20px;
+  resize: none;
+}
+
+.footer-mess:hover {
+  /*border: 1px $color-contrast;*/
+  -webkit-box-shadow: inset 0 0 7px #445162;
+          box-shadow: inset 0 0 7px #445162;
+  opacity: 0.95;
 }
 
 .footer-list {
@@ -403,6 +462,22 @@ body {
   font-weight: 400;
   color: #ffffff;
   margin: 5px 0 25px;
+}
+
+.footer-item a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-item a:hover {
+  color: #ffffff;
+  text-shadow: 2px 2px 3px #f5f5f5;
+}
+
+.footer-item a:active, .footer-item a:focus {
+  color: #ffffff;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px #445162, 2px 2px 4px #ffffff;
 }
 
 .footer-skype {
@@ -483,5 +558,31 @@ body {
   text-align: center;
   padding: 5px 0;
   margin: 0;
+}
+
+textarea::-webkit-input-placeholder, input::-webkit-input-placeholder {
+  color: #445162;
+  font-family: ArialMT, Arial, sans-serif;
+}
+
+textarea:-ms-input-placeholder, input:-ms-input-placeholder {
+  color: #445162;
+  font-family: ArialMT, Arial, sans-serif;
+}
+
+textarea::-ms-input-placeholder, input::-ms-input-placeholder {
+  color: #445162;
+  font-family: ArialMT, Arial, sans-serif;
+}
+
+textarea::placeholder, input::placeholder {
+  color: #445162;
+  font-family: ArialMT, Arial, sans-serif;
+}
+
+input:hover, textarea:hover, button:hover {
+  background-color: white;
+  font-weight: 800;
+  color: #44515d;
 }
 /*# sourceMappingURL=style.css.map */

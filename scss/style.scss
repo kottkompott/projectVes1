@@ -10,6 +10,7 @@ $color-contrast:#ffffff;
 @mixin button {    
     height: 40px;
     background-color:$color-contrast;
+    text-transform: uppercase;
     border-radius: 7px;    
     font-size: 18px;
     line-height: 18px;
@@ -18,12 +19,12 @@ $color-contrast:#ffffff;
 } 
 @mixin footer-it {
     position: absolute;
-        width: 26px;
-        height: 26px;
-        top: 0;
-        left: -32px;
-        content: '';
-        background-size: 26px 26px;
+    width: 26px;
+    height: 26px;
+    top: 0;
+    left: -32px;
+    content: '';
+    background-size: 26px 26px;
 }
 @font-face {
     font-family: 'ArialMT';
@@ -34,7 +35,7 @@ $color-contrast:#ffffff;
     src: url('../fonts/socialico.ttf') format('truetype');
 }
 
-html, body, h1, h2, h3, img, p {
+html, body, h1, h2, h3, img, p, a {
     margin: 0;
     padding: 0;
 }
@@ -47,7 +48,7 @@ body {
     font-weight: 400;
     color: #333333;
 }
-.header{
+.header {
     color:$color-contrast;
     background:$color-base;   
     font-weight: 400;
@@ -56,23 +57,23 @@ body {
     display: flex;
     justify-content: space-between;
 
-    &-title{
+    &-title {
         font-size: 60px;
         line-height: 1.2;
         font-weight: 400;
         margin: 10px 0 35px;
     }
-    &-list{
+    &-list {
         list-style: none;
         margin: 0;
         padding: 0 0 0 35px;
     }
-    &-item{    
+    &-item {    
         font-size: 20px;
         line-height: 36px;
         position: relative;    
     }
-    &-item::before{
+    &-item::before {
         width: 25px;
         height: 19px;
         position: absolute;    
@@ -82,50 +83,50 @@ body {
         background: url(../img/check_icon_349.png);
         background-size: 25px 19px;
     }
-    &-img{
+    &-img {
         margin-top: 10px;
     }
 }
-.title{
+.title {
     @include title;
     color:$color-base - #000001;
 }
-.about{
+.about {
     padding: 50px 0 0 0;
     margin: 0 50px 50px;
     background:$color-contrast;
     display: flex;
     justify-content: space-between;
 
-    &-title{
+    &-title {
         margin: 0 0 14px 0;
     }
-    &-content{
+    &-content {
         max-width: 650px;
     }
-    &-text{
+    &-text {
         padding: 10px 10px 5px 0;
     }
 }
-.dignity{
+.dignity {
     background:#f5f5f5;
     padding: 50px 50px 20px;  
 
-    &-title{
+    &-title {
         text-align: center;    
     }
-    &-list{
+    &-list {
         list-style-type: none;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;  
     }
-    &-item{
+    &-item {
         margin: 0 0 40px 0;
         width: 47%;
         position: relative;
     }
-    &-item::before{
+    &-item::before {
         width: 34px;
         height: 35px;
         position: absolute;
@@ -136,14 +137,14 @@ body {
         background-size: 34px 35px;
     }
 }
-.screenshots{
+.screenshots {
     padding: 50px 50px 20px;
     background:$color-contrast;
-    &-title{
+    &-title {
         text-align: center;
         margin: 0 0 14px 0;
     }
-    &-list{
+    &-list {
         width: 100%;
         padding: 20px 0 0 0;
         list-style-type: none;
@@ -151,45 +152,45 @@ body {
         justify-content: space-between;
         flex-wrap: wrap;  
     }
-    &-item{
+    &-item {
         width: 48%;
         display: flex;
         justify-content: space-between;   
         margin: 0 0 25px; 
     }
 }
-.scr-tit{    
+.scr-tit {    
     font-size: 24px;
     line-height: 30px;
     font-weight: 400;
     margin: 0;
     color:$color-base - #000001;
 }
-.scr-ins{
+.scr-ins {
     margin: 0 0 0 10px;
 }
-.reviews{
+.reviews {
     background: #f5f5f5;
     padding: 50px 50px 35px;  
 
-    &-title{
+    &-title {
         text-align: center;
         margin: 0 0 14px 0;
     }
-    &-wrap{
+    &-wrap {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    &-content{
+    &-content {
         width: 49%;
         display: flex;
         justify-content: space-around;
     }
-    &-userpick{
+    &-userpick {
         margin: 20px 0 0 0;
     }
-    &-review{    
+    &-review {    
         background: #ebebeb;
         max-width: 450px;
         border-radius: 5px;    
@@ -198,7 +199,7 @@ body {
         position: relative;
         z-index: 10;
     }
-    &-review::after{
+    &-review::after {
         content: '';
         width: 0;
         height: 0;
@@ -214,42 +215,42 @@ body {
         left: -15px;
     }
 }
-.review-text{
+.review-text {
     padding: 5px;
     font-size: 14px;
     line-height: 18px;
     font-style: italic;
     color: #333333;
 }
-.review-sing{
+.review-sing {
     padding: 5px;
     font-size: 14px;
     line-height: 18px;
     color: #989898;
 }
-.buy{
+.buy {
     padding: 50px 50px 20px;
     background: #fff;
     
 
-    &-title{
+    &-title {
         text-align: center;
         margin: 0 0 14px 0;
     }
 
-    &-conditions{
+    &-conditions {
         display: flex;
         justify-content: space-around;
         padding: 40px 50px;
         align-items: flex-end;
     }
-    &-condition{
+    &-condition {
         background: #445162;    
         border-radius: 5px;
         width: 30%;
         max-width: 300px;
     }
-    &-condition-title{
+    &-condition-title {
         font-size: 24px;
         line-height: 30px;
         font-weight: 400;
@@ -257,7 +258,7 @@ body {
         text-align: center;
         padding: 15px 0;
     }
-    &-condition-price{
+    &-condition-price {
         border:1px solid $color-base;
         background:$color-contrast;
         width: 99%;
@@ -268,44 +269,72 @@ body {
         text-align: center;
         padding: 15px 0;
     }
-    &-condition-item{
+    &-condition-item {
         font-size: 14px;
         line-height: 24px;
         font-weight: 400;
         color:$color-contrast;
     }
-    &-condition-button{
+    &-condition-button {
         width: 260px;    
         font-size: 18px;
         @include button;
         margin: 5px 20px 20px;
-    }
+    } 
+    &-condition-button:hover, &-condition-button:focus {        
+        box-shadow: inset 0 0 7px $color-base;
+        opacity: 0.97;
+        font-weight: 1200;
+        color:$color-contrast;
+        text-shadow: $color-base 1px 1px 2px;
+    }  
+    &-condition-button:active {        
+        box-shadow: inset 0 0 6px $color-base - #000003;
+        opacity: 0;
+        font-weight: 1200;
+        color:#f5f5f5;
+        text-shadow: $color-base 1px 1px 2px $color-contrast 2px 2px 3px;
+    } 
 }
-.footer{
+.footer {
     padding: 50px 0 0;
     background: $color-base;
-    &-title{
+    &-title {
         @include title;
         text-align: center;
         color:$color-contrast;
     }
-    &-wrap{
+    &-wrap {
         padding: 10px 0 60px;
         width: 64%;
         margin: 0 18%;
         display: flex;
         justify-content: space-between;
     }
-    &-form{
+    &-form {
         width: 500px;
         height: 354px;        
     }
-    &-button{
+    &-button {
         @include button;
         width: 140px;
         margin: 5px 180px;
     }
-    &-input{
+    &-button:hover, &-button:focus {        
+        box-shadow: inset 0 0 7px $color-base;
+        opacity: 0.97;
+        font-weight: 1200;
+        color:$color-contrast;
+        text-shadow: $color-base 1px 1px 2px;
+    }  
+    &-button:active {        
+        box-shadow: inset 0 0 6px $color-base - #000003;
+        opacity: 0;
+        font-weight: 1200;
+        color:#f5f5f5;
+        text-shadow: $color-base 1px 1px 2px $color-contrast 2px 2px 3px;
+    } 
+    &-input {
         width: 500px;
         font-size: 16px;
         line-height: 24px;
@@ -315,10 +344,27 @@ body {
         border-radius: 7px;
         margin: 0 0 20px;
     }
-    &-input-mess{
-        padding-bottom: 130px;
+    &-input:hover {
+        box-shadow: inset 0 0 7px $color-base;
+        opacity: 0.95;
     }
-    &-list{
+    &-mess {
+        width: 500px;        
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color:$color-base;
+        padding: 10px 10px 130px;
+        border-radius: 7px;
+        margin: 0 0 20px;
+        resize: none;
+    }
+    &-mess:hover {
+        /*border: 1px $color-contrast;*/
+        box-shadow: inset 0 0 7px $color-base;
+        opacity: 0.95;
+    }
+    &-list {
         list-style-type: none;
         padding: 0 0 0 32px;
         margin: 0;
@@ -330,36 +376,48 @@ body {
         color:$color-contrast;
         margin: 5px 0 25px;
       }
-      &-skype{
+    &-item a:link {
+        color:$color-contrast;
+        text-decoration: none;        
+    }
+    &-item a:hover {
+        color:$color-contrast;
+        text-shadow: 2px 2px 3px #f5f5f5;        
+    }
+    &-item a:active, &-item a:focus {
+        color:$color-contrast;
+        font-weight: 500;
+        text-shadow: 1px 1px 2px $color-base, 2px 2px 4px $color-contrast;        
+    }
+    &-skype {
         position: relative;
-      }
-      &-skype::before {
+    }
+    &-skype::before {
         @include footer-it;
         background: url(../img/skype_icon.png) no-repeat;
-      }
-      
-      &-icq{
+    } 
+    &-icq {
         position: relative;
       }
       &-icq::before {
         @include footer-it;
         background: url(../img/icq_icon.png) no-repeat;
       }
-      &-email{
+      &-email {
         position: relative;
       }
       &-email::before {
         @include footer-it;
         background: url(../img/email_icon.png) no-repeat;
       }
-      &-phone{
+      &-phone {
         position: relative;
       }
       &-phone::before {
         @include footer-it;
         background: url(../img/phone_icon.png) no-repeat;
       }
-      &-socbut {
+    &-socbut {
         font-family: Socialico;
         font-size: 60px;
         line-height: 24px;
@@ -367,8 +425,8 @@ body {
         letter-spacing: 0.025em;
         color:$color-contrast;
         margin:45px 0;
-      }
-      &-copyr{
+    }
+    &-copyr {
         font-size: 12px;        
         letter-spacing: 0.025em;
         color: $color-base;
@@ -376,5 +434,14 @@ body {
         text-align: center;
         padding: 5px 0 ;
         margin: 0;
-      }
+    }
+}
+textarea::placeholder, input::placeholder {
+    color:$color-base; 
+    font-family: ArialMT, Arial, sans-serif;
+}
+input:hover, textarea:hover, button:hover {
+    background-color:$color-contrast + #050505;        
+    font-weight: 800;
+    color:$color-base -#000005;
 }
